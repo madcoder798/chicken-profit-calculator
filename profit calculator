@@ -7,76 +7,80 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
             text-align: center;
-            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         input {
-            margin: 5px;
             padding: 8px;
-            width: 150px;
+            margin: 5px;
+            width: 120px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
-        button {
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .benefit-box {
+            width: 45%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
             margin: 10px;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
-        button:hover {
-            background-color: #218838;
-        }
-        .result {
-            font-size: 18px;
-            margin-top: 15px;
+        .benefit-box img {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-
-    <h2>Chicken Profit Calculator</h2>
-
-    <label>Live Bird Rate (₹/kg):</label>
-    <input type="number" id="liveRate" placeholder="Enter Rate"><br>
-
-    <label>Total Live Bird Weight (kg):</label>
-    <input type="number" id="totalWeight" placeholder="Enter Weight"><br>
-
-    <label>Yield Percentage (%):</label>
-    <input type="number" id="yield" placeholder="Enter Yield"><br>
-
-    <label>Selling Price (₹/kg):</label>
-    <input type="number" id="sellingPrice" placeholder="Enter Price"><br>
-
-    <button onclick="calculateProfit()">Calculate Profit</button>
-
-    <div class="result" id="output"></div>
-
-    <script>
-        function calculateProfit() {
-            let liveRate = parseFloat(document.getElementById("liveRate").value);
-            let totalWeight = parseFloat(document.getElementById("totalWeight").value);
-            let yieldPercent = parseFloat(document.getElementById("yield").value) / 100;
-            let sellingPrice = parseFloat(document.getElementById("sellingPrice").value);
-
-            if (isNaN(liveRate) || isNaN(totalWeight) || isNaN(yieldPercent) || isNaN(sellingPrice)) {
-                document.getElementById("output").innerHTML = "<p style='color:red;'>Please enter valid values!</p>";
-                return;
-            }
-
-            let usefulChickenWeight = totalWeight * yieldPercent;
-            let costPerKgUsefulChicken = (liveRate / yieldPercent).toFixed(2);
-            let profitPerKg = (sellingPrice - costPerKgUsefulChicken).toFixed(2);
-            let totalProfit = (profitPerKg * usefulChickenWeight).toFixed(2);
-
-            document.getElementById("output").innerHTML = `
-                <p><strong>Useful Chicken Weight:</strong> ${usefulChickenWeight.toFixed(2)} kg</p>
-                <p><strong>Cost per kg of Useful Chicken:</strong> ₹${costPerKgUsefulChicken}</p>
-                <p><strong>Profit per kg:</strong> ₹${profitPerKg}</p>
-                <p><strong>Total Profit:</strong> ₹${totalProfit}</p>
-            `;
-        }
-    </script>
-
+    <div class="container">
+        <h2>Chicken Profit Calculator</h2>
+        <input type="number" placeholder="Live Rate/kg">
+        <input type="number" placeholder="Total Weight">
+        <input type="number" placeholder="Yield %">
+        <input type="number" placeholder="Selling Price 1">
+        <input type="number" placeholder="Selling Price 2">
+        <input type="number" placeholder="Selling Price 3">
+        <input type="number" placeholder="Selling Price 4">
+        <button>Calculate</button>
+    </div>
+    
+    <div class="benefits">
+        <div class="benefit-box">
+            <img src="https://source.unsplash.com/400x200/?chicken,curry" alt="Chicken Dish">
+            <h3>Rich in Protein</h3>
+            <p>Chicken is an excellent source of high-quality protein, essential for muscle growth and repair.</p>
+        </div>
+        <div class="benefit-box">
+            <img src="https://source.unsplash.com/400x200/?grilled,chicken" alt="Grilled Chicken">
+            <h3>Boosts Immunity</h3>
+            <p>Contains essential vitamins and minerals that help strengthen the immune system.</p>
+        </div>
+        <div class="benefit-box">
+            <img src="https://source.unsplash.com/400x200/?spicy,chicken" alt="Spicy Chicken">
+            <h3>Supports Weight Loss</h3>
+            <p>Lean chicken meat helps in maintaining a balanced diet and supports weight management.</p>
+        </div>
+        <div class="benefit-box">
+            <img src="https://source.unsplash.com/400x200/?chicken,salad" alt="Chicken Salad">
+            <h3>Good for the Heart</h3>
+            <p>Chicken is low in saturated fat and can contribute to better heart health.</p>
+        </div>
+    </div>
 </body>
 </html>
