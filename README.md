@@ -66,7 +66,7 @@
             margin-top: 20px;
         }
         .benefit-box {
-            background: lavender;
+            background: linear-gradient(to right, #d6b3ff, #c27ffb);
             color: black;
             padding: 15px;
             border-radius: 10px;
