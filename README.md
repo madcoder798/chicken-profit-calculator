@@ -47,16 +47,16 @@
             background-color: #0056b3;
         }
         .result-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background: white;
-            color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
         }
         .result-table th, .result-table td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
+    background-color: darkgray;
+    color: black;
+    padding: 10px;
         }
         .benefits {
             display: flex;
