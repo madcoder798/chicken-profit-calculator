@@ -129,7 +129,7 @@
             <p>Rich in calcium and phosphorus, essential for strong bones and teeth.</p>
         </div>
         <div class="benefit-box">
-            <img src="https://cdn.pixabay.com/photo/2022/05/19/20/21/fried-legs-7208116_1280.jpg" alt="Chicken Dish 5">
+            <img src="https://cdn.pixabay.com/photo/2019/01/23/10/35/fried-3949947_1280.jpg" alt="Chicken Dish 5">
             <h4>Supports Weight Loss</h4>
             <p>Low in fat and high in protein, helps control hunger and weight.</p>
         </div>
