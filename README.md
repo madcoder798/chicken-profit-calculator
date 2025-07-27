@@ -109,27 +109,27 @@
 
     <div class="benefits">
         <div class="benefit-box">
-            <img src="https://source.unsplash.com/250x150/?chicken,dish1" alt="Chicken Dish 1">
+            <img src="https://cdn.pixabay.com/photo/2022/11/07/15/47/chicken-wings-7576679_1280.jpg,dish1" alt="Chicken Dish 1">
             <h4>High Protein Source</h4>
             <p>Chicken is rich in protein, essential for muscle growth and repair.</p>
         </div>
         <div class="benefit-box">
-            <img src="https://source.unsplash.com/250x150/?chicken,dish2" alt="Chicken Dish 2">
+            <img src="https://cdn.pixabay.com/photo/2018/07/29/23/37/barbecue-3571403_1280.jpg,dish2" alt="Chicken Dish 2">
             <h4>Boosts Immunity</h4>
             <p>Contains vitamins B6 & B12, which help strengthen the immune system.</p>
         </div>
         <div class="benefit-box">
-            <img src="https://source.unsplash.com/250x150/?chicken,dish3" alt="Chicken Dish 3">
+            <img src="https://cdn.pixabay.com/photo/2016/07/31/17/51/chicken-1559548_1280.jpg,dish3" alt="Chicken Dish 3">
             <h4>Heart Health</h4>
             <p>Low in saturated fat, helps maintain healthy cholesterol levels.</p>
         </div>
         <div class="benefit-box">
-            <img src="https://source.unsplash.com/250x150/?chicken,dish4" alt="Chicken Dish 4">
+            <img src="https://cdn.pixabay.com/photo/2022/05/19/20/21/fried-legs-7208116_1280.jpg,dish4" alt="Chicken Dish 4">
             <h4>Strengthens Bones</h4>
             <p>Rich in calcium and phosphorus, essential for strong bones and teeth.</p>
         </div>
         <div class="benefit-box">
-            <img src="https://source.unsplash.com/250x150/?chicken,dish5" alt="Chicken Dish 5">
+            <img src="https://cdn.pixabay.com/photo/2022/05/19/20/21/fried-legs-7208116_1280.jpg,dish5" alt="Chicken Dish 5">
             <h4>Supports Weight Loss</h4>
             <p>Low in fat and high in protein, helps control hunger and weight.</p>
         </div>
